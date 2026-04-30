@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script src="./Storm_Mastery_files/calc_code.js"></script>
+<head>
+	<title>Storm Mastery Calculator</title>
+</head>
+<body>
+	Pick a storm: <select id="storm">
+		<option value="magnet">Magnet Storm</option>
+		<option value="tire">Tire Storm</option>
+		<option value="GS">GS Storm</option>
+		<option value="wrench">Wrench Storm</option>
+		<option value="beam">Beam Storm</option>
+	</select><br>
+	Current level: <input type="number" id="current_lvl" placeholder="0"><br>
+	Expected level: <input type="number" id="expected_lvl" placeholder="1"></input><br>
+	<br>
+	<p>Current boost: +<span id="boost0">32%</span></p>
+	<p>Expected boost: +<span id="boost1">33%</span></p>
+	<p>It will take <span id="cost0">100</span> items to level up</p>
+	<p>It is equal to <span id="cost1">3</span> storms</p>
+	<p>Expected time: <span id="expectedtime">0</span> seconds (assuming 1 of each storm every 25 mins)</p>
+	
+	
+</body>
