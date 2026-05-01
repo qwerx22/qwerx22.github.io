@@ -14,21 +14,22 @@ var calc = window.setInterval(function() {
         id("boost0").innerHTML = current_level +"%"
         id("boost1").innerHTML = next_level +"%"
     }
+    
     id("cost0").innerHTML = cost
     if (storm=='magnet') {
         id("cost1").innerHTML = Math.ceil(cost / 35)
-        id("expectedtime").innerHTML = Math.ceil(cost / 35) * 1500
+        id("expectedtime").innerHTML = Math.ceil(cost / 35) * (5/12) 
     } else if (storm=='tire') {
         id("cost1").innerHTML = Math.ceil(cost / 20)
-        id("expectedtime").innerHTML = Math.ceil(cost / 20) * 1500
+        id("expectedtime").innerHTML = Math.ceil(cost / 20) * (5/12)
     } else if (storm=='GS') {
         id("cost1").innerHTML = Math.ceil(cost / 35)
-        id("expectedtime").innerHTML = Math.ceil(cost / 35) * 1500
+        id("expectedtime").innerHTML = Math.ceil(cost / 35) * (5/12)
     } else if (storm=='wrench') {
         id("cost1").innerHTML = Math.ceil(cost / 100)
-        id("expectedtime").innerHTML = Math.ceil(cost / 100) * 1500
+        id("expectedtime").innerHTML = Math.ceil(cost / 100) * (5/12)
     } else if (storm=='beam') {
         id("cost1").innerHTML = Math.ceil(cost / 20)
-        id("expectedtime").innerHTML = Math.ceil(cost / 20) * 1500
+        id("expectedtime").innerHTML = Math.ceil(cost / 20) * (5/12)
     }
 }, 50)
