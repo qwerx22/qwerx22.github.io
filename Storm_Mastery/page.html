@@ -14,12 +14,13 @@
 			<option value="wrench">Wrench Storm</option>
 			<option value="beam">Beam Storm</option>
 		</select><br>
-		Current level: <input type="number" id="current_lvl" placeholder="0"><br>
-		Expected level: <input type="number" id="expected_lvl" placeholder="1"></input><br>
+		Current level: <input type="number" id="current_lvl" value="0"><br>
+		Expected level: <input type="number" id="expected_lvl" value="1"></input><br>
+		Current progress: <input type="number" id="progress" value="0"></input> / <span id="max_progress">100</span><br>
 		<br>
-		<p>Current boost: +<span id="boost0" style="font-size:14pt; color:#002000; text-shadow: 0px 0px 12px">0%</span></p>
-		<p>Expected boost: +<span id="boost1" style="font-size:14pt; color:#002000; text-shadow: 0px 0px 12px">1%</span></p>
-		<p>It will take <span id="cost0" style="font-size:14pt; color:#202020; text-shadow: 0px 0px 12px">100</span> items to reach this level, which is equal to <span id="cost1" style="font-size:14pt; color:#303030; text-shadow: 0px 0px 12px">3</span> storms</p>
-		<p>Expected time: <span id="expectedtime" style="font-size:14pt; color:#202020; text-shadow: 0px 0px 12px">0</span> hours (assuming 1 of each storm every 25 mins)</p>
+		<p>Current boost: +<span id="boost0" class="value">0%</span></p>
+		<p>Expected boost: +<span id="boost1" class="value">1%</span></p>
+		<p>It will take <span id="cost0" class="value">100</span> items to reach this level, which is equal to <span id="cost1" class="value">3</span> storms</p>
+		<p>Expected time: <span id="expectedtime" class="value">0</span> hours (assuming 1 of each storm every 25 mins)</p>
 	</body>
 </html>
