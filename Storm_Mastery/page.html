@@ -7,21 +7,62 @@
 	</head>
 	<body>
 		<p style="font-size:24pt; font-family: monospace; text-shadow: 0px 0px 30px"><b>Storm Mastery Calculator</b></p>
-		Pick a storm: <select id="storm">
-			<option value="magnet">Magnet Storm</option>
-			<option value="tire">Tire Storm</option>
-			<option value="GS">GS Storm</option>
-			<option value="wrench">Wrench Storm</option>
-			<option value="beam">Beam Storm</option>
-		</select><br>
-		Current level: <input type="number" id="current_lvl" value="0"><br>
-		Target level: <input type="number" id="expected_lvl" value="1"></input><br>
-		Current progress: <input type="number" id="progress" value="0"></input> / <span id="max_progress">100</span><br>
-		<br>
-		<p>Current boost: +<span id="boost0" class="value">0%</span></p>
-		<p>Expected boost: +<span id="boost1" class="value">1%</span></p>
-		<p>It will take <span id="cost0" class="value">100</span> items to reach this level, which is equal to <span id="cost1" class="value">3</span> storms</p>
-		<p>Expected time: <span id="expectedtime" class="value">0</span> hours (assuming 1 of each storm every 25 mins)</p>
-		<p style="font-size: 8pt; font-family:math">Calc made by {UB} qwerx</p>
+		<div id="navigation">
+			<table>
+				<tr>
+					<td><button onclick="tabs('tab1')" id="time" class="nav">Level calc</button></td>
+					<!--<td><button onclick="tabs('tab2')" id="token" class="nav">Storm Mastery Token calc</button></td>-->
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div id="tab1">
+			Pick a storm: <select id="storm" class="input">
+				<option value="magnet">Magnet Storm</option>
+				<option value="tire">Tire Storm</option>
+				<option value="GS">GS Storm</option>
+				<option value="wrench">Wrench Storm</option>
+				<option value="beam">Beam Storm</option>
+			</select><br>
+			<div style="display:inline-block">
+				<table>
+					<tr>
+						<td>Current level: </td>
+						<td><input type="number" id="current_lvl" class="input" value="0"></input></td>
+					</tr><tr>
+						<td>Target level: </td>
+						<td><input type="number" id="expected_lvl" class="input" value="1"></input></td>
+					</tr><tr>
+						<td>Current progress: </td>
+						<td><input type="number" id="progress" class="input" value="0"></input></td>
+						<td> / <span id="max_progress">100</span></td>
+					</tr>
+				</table>
+			</div><br>
+			<p id="tireStormBoost" style="display: none">Tire Storm Boost level: <input type="number" id="tireStormValue" class="input" value="0"></input></p>
+			<p>Current boost: +<span id="boost0" class="value">0%</span></p>
+			<p>Target boost: +<span id="boost1" class="value">1%</span></p>
+			<p>It will take <span id="cost0" class="value">100</span> items to reach this level, which is equal to <span id="cost1" class="value">3</span> storms</p>
+			<p>Expected time: <span id="expectedtime" class="value">0</span> hours (assuming 1 of each storm every 25 mins)</p>
+		</div>
+		<div id="tab2" style="display: none">
+			<table>
+				<tr>
+					<td>Magnet Level:</td>
+					<td>GS Level:</td>
+					<td>Beam Level:</td>
+					<td>Wrench Level:</td>
+					<td>Tire Level:</td>
+				</tr><tr>
+					<td><input type="number" id="tab2-1" class="input" value="0"></input></td>
+					<td><input type="number" id="tab2-2" class="input" value="0"></input></td>
+					<td><input type="number" id="tab2-3" class="input" value="0"></input></td>
+					<td><input type="number" id="tab2-4" class="input" value="0"></input></td>
+					<td><input type="number" id="tab2-5" class="input" value="0"></input></td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<p style="font-size: 9pt; font-family:math">Calc made by {UB} qwerx</p>
 	</body>
 </html>

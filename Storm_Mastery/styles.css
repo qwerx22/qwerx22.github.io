@@ -1,6 +1,6 @@
 
 body {
-	background-image: linear-gradient(#00C000, #008000);
+	background-image: linear-gradient(#70C000, #408000);
     background-size: 1920px 1080px;
 	color: #000000;
     font-family: sans-serif;
@@ -11,5 +11,35 @@ body {
     font-size: 15pt;
     font-family: monospace;
     text-shadow: 0px 0px 12px;
-    color: #004000
+    color: #104000
+}
+
+.nav {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #AFFF0F;
+    box-shadow: 4px 4px 0px;
+    font-family: math;
+    transition: background-color 0.4s
+}
+
+.nav:hover {
+    cursor: pointer;
+    background-color: #EFFF2F;
+}
+
+.input {
+    width: 140px;
+    height: 20px;
+    font-size: 14px;
+    background-color: #BFDF6F;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s
+}
+
+.input:hover {
+    background-color: #CFFF7F;
 }
